@@ -8,6 +8,7 @@ function default () {
 
   #
 
+  rpm -ivh http://fedora.mirrors.pair.com/epel/6/i386/epel-release-6-8.noarch.rpm
   yum update --assumeyes
   yum install --assumeyes `get_package_list`
 
@@ -19,8 +20,9 @@ function default () {
 
 function get_package_list () {
   cat <<EOF
-emacs-nox
-ruby
+  emacs-nox
+  ruby
+  wget
 EOF
 }
 
