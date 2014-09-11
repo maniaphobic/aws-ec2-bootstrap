@@ -22,6 +22,7 @@ function get_package_list () {
   cat <<EOF
   emacs-nox
   ruby
+  tmux
   wget
 EOF
 }
